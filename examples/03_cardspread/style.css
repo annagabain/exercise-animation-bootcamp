@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.card {
+    width: 100px;
+    height: 150px;
+    position: absolute;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transform-origin: bottom center;
+
+ 
+}
+
+.card:nth-child(1) {
+    background-color: red
+}
+
+.card:nth-child(2) {
+    background-color: orange
+}
+
+.card:nth-child(3) {
+    background-color: yellow
+}
+
+.card:nth-child(4) {
+    background-color: yellowgreen
+}
+
+.card:nth-child(5) {
+    background-color: green
+}
+
+.card:nth-child(6) {
+    background-color: lightblue
+}
+
+.card:nth-child(7) {
+    background-color: rgb(41, 118, 243)
+}
+
+.card:nth-child(8) {
+    background-color: violet
+}
+
+.card:nth-child(9) {
+    background-color: lightpink
+}
+
+body:hover .card:nth-child(1) {
+    transform: rotate(30deg) translateX(40%);
+}
+
+body:hover .card:nth-child(2) {
+    transform: rotate(20deg) translateX(30%);
+}
+
+body:hover .card:nth-child(3) {
+    transform: rotate(10deg) translateX(20%);
+}
+
+body:hover .card:nth-child(4) {
+    transform: rotate(0deg) translateX(10%);
+}
+
+body:hover .card:nth-child(5) {
+    transform: rotate(-10deg) translateX(0%);
+}
+
+body:hover .card:nth-child(6) {
+    transform: rotate(-20deg) translateX(-10%);
+}
+
+body:hover .card:nth-child(7) {
+    transform: rotate(-30deg) translateX(-20%);
+}
+
+body:hover .card:nth-child(8) {
+    transform: rotate(-40deg) translateX(-30%);
+}
+
+body:hover .card:nth-child(9) {
+    transform: rotate(-50deg) translateX(-40%);
+}
+
+/* experiment with keyframes, uncomment to test */
+
+/* 
+@keyframes rainbow {
+    0% { background-color: lightpink; } 
+    11.11% { background-color: blueviolet; } 
+    22.22% { background-color: blue; }
+    33.33% { background-color: lightblue; } 
+    44.44% { background-color: green; } 
+    55.55% { background-color: yellowgreen; } 
+    66.66% { background-color: yellow; } 
+    77.77% { background-color: orange; } 
+    100% { background-color: red; } 
+ }
+
+.card:nth-child(1) { animation: rainbow 5s infinite; }
+.card:nth-child(2) { animation: rainbow 5s infinite 0.56s; }
+.card:nth-child(3) { animation: rainbow 5s infinite 1.11s; }
+.card:nth-child(4) { animation: rainbow 5s infinite 1.67s; }
+.card:nth-child(5) { animation: rainbow 5s infinite 2.22s; }
+.card:nth-child(6) { animation: rainbow 5s infinite 2.78s; }
+.card:nth-child(7) { animation: rainbow 5s infinite 3.33s; }
+.card:nth-child(8) { animation: rainbow 5s infinite 3.89s; }
+.card:nth-child(9) { animation: rainbow 5s infinite 4.44s; } */
