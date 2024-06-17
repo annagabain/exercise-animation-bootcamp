@@ -1,0 +1,61 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0eb;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    background-color: white;
+}
+
+.cube {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: green;
+    animation: moveCube 10s;
+}
+
+@keyframes moveCube {
+    0% {
+        background-color: green;
+        top: calc(50% - 25px);
+        left: calc(100% - 50px); 
+    }
+    25% {
+        background-color: yellow;
+        top: 0;
+        left: calc(100% - 50px);
+    }
+    50% {
+        background-color: blue;
+        top: 0;
+        left: 0;
+    }
+    75% {
+        background-color: indigo;
+        top: calc(100% - 50px);
+        left: 0;
+    }
+    100% {
+        background-color: orange;
+        top: calc(100% - 50px); 
+        left: calc(100% - 50px); 
+    }
+}
