@@ -38,6 +38,10 @@ Gör en kortlek med 9 kort som vid hover av body sprider ut sig i en solfjäder.
 
 ![screen](/examples/03_cardspread/screen.png)
 
+My solution:
+
+[![preview](/examples/03_cardspread/screen.png)](https://htmlpreview.github.io/?https://raw.githubusercontent.com/annagabain/exercise-animation-bootcamp/main/examples/03_cardspread/index.html)
+
 
 
 ## 2. Keyframes
