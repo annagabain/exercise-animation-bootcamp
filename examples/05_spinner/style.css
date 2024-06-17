@@ -1,0 +1,23 @@
+
+body {
+    background-color: lightgray;
+}
+.spinner {
+    width: 5px;
+    height: 50px;
+    background-color: rgb(209, 50, 50);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
