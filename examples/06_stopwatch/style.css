@@ -1,0 +1,57 @@
+body {
+    background-color: rgba(211, 211, 211, 0.164);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+main {
+    width: 200px;
+    height: 200px;
+    border: 5px solid darkgrey;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+}
+
+.seconds-hand {
+    width: 2px;
+    height: 80px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    transform: translate(-50%, -100%) rotate(0deg);
+    animation: spin 60s linear infinite;
+}
+
+.hour-hand {
+    width: 4px;
+    height: 60px;
+    background-color: rgb(100, 97, 97);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    transform: translate(-50%, -100%) rotate(30deg);
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(100, 97, 97);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    100% {
+        transform: translate(-50%, -100%) rotate(360deg);
+    }
+}
